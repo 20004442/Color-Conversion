@@ -27,7 +27,7 @@ End the program and close the output image windows.
 # i) Convert BGR and RGB to HSV and GRAY
 
 import cv2
-color_image = cv2.imread('bts.jpg')
+color_image = cv2.imread('Heidi.jpg')
 cv2.imshow('Original image',color_image)
 hsv_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2HSV)
 cv2.imshow('BGR2HSV' ,hsv_image )
@@ -39,7 +39,7 @@ cv2. destroyAllWindows()
 # ii)Convert HSV to RGB and BGR
 
 import cv2
-color_image = cv2.imread('bts.jpg')
+color_image = cv2.imread('Heidi.jpg')
 cv2.imshow('Original image', color_image)
 hsv_image = cv2.cvtColor(color_image, cv2.COLOR_HSV2RGB)
 cv2.imshow('HSV2RGB' ,hsv_image )
@@ -51,7 +51,7 @@ cv2. destroyAllWindows()
 # iii)Convert RGB and BGR to YCrCb
 
 import cv2
-color_image = cv2.imread('bts.jpg')
+color_image = cv2.imread('Heidi.jpg')
 cv2.imshow('Original image',color_image)
 gray_image1 = cv2.cvtColor (color_image, cv2.COLOR_RGB2YCrCb)
 cv2.imshow('RGB2YCrCb', gray_image1)
@@ -63,7 +63,7 @@ cv2. destroyAllWindows()
 # iv)Split and Merge RGB Image
 
 import cv2
-image = cv2.imread('bts.jpg')
+image = cv2.imread('Heidi.jpg')
 blue=image[:,:,0]
 green=image[:,:,1]
 red=image[:,:,2]
@@ -78,7 +78,7 @@ cv2.destoryAllWindows()
 # v) Split and merge HSV Image
 
 import cv2
-image = cv2.imread('bts.jpg')
+image = cv2.imread('Heidi.jpg')
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 h,s,v = cv2.split(hsv)
 cv2.imshow('Hue-Image',h)
@@ -92,30 +92,35 @@ cv2.destoryAllWindows()
 ```
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
-![DIP31](https://user-images.githubusercontent.com/75235813/163426897-47371b84-de53-473c-b014-653ec08732b2.JPG)
-![DIP32](https://user-images.githubusercontent.com/75235813/163426920-2499a8e9-a102-48fd-8243-51f873cd2ee4.JPG)
+![H2](https://user-images.githubusercontent.com/75235813/163431169-c07d04ad-82fa-4df1-94ad-548140f91a19.JPG)
+![H1](https://user-images.githubusercontent.com/75235813/163431219-c43f34eb-ea19-45e4-900f-23f0171e6d06.JPG)
+
 
 
 ### ii) HSV to RGB and BGR
-![DIP33](https://user-images.githubusercontent.com/75235813/163426979-00ef3a59-5639-4202-bcd6-847d4e8b35c5.JPG)
-![DIP34](https://user-images.githubusercontent.com/75235813/163427005-d3df5e1d-7336-4a4a-8347-627e8d319886.JPG)
+![H3](https://user-images.githubusercontent.com/75235813/163431260-6ac0db1b-abf0-4b34-9d7d-e81e8e47a8d6.JPG)
+![H4](https://user-images.githubusercontent.com/75235813/163431283-7944729d-37ce-4f4a-bf55-b5d6cdf94260.JPG)
+
 
 ### iii) RGB and BGR to YCrCb
-![DIP35](https://user-images.githubusercontent.com/75235813/163427093-5c0ec8b1-4433-4361-b2ab-2e534b95fffa.JPG)
-![DIP36](https://user-images.githubusercontent.com/75235813/163427117-1d3a205a-0e7a-486b-80cb-75bfe004e016.JPG)
+![H5](https://user-images.githubusercontent.com/75235813/163431314-f537016b-d689-48de-acf8-dcc26a673b03.JPG)
+![H6](https://user-images.githubusercontent.com/75235813/163431327-69de2a62-3cfd-480d-8a15-c1164e421ba5.JPG)
+
 
 
 ### iv) Split and merge RGB Image
-![DIP37](https://user-images.githubusercontent.com/75235813/163427144-85bfbcbd-5d85-4415-8314-2f2790296044.JPG)
-![DIP38](https://user-images.githubusercontent.com/75235813/163427171-23a3f8a9-dd0e-4d5e-9277-d6fa4d5ee8b7.JPG)
-![DIP39](https://user-images.githubusercontent.com/75235813/163427188-e101ff4e-f892-4ee1-a9ee-9be3ffc9aee0.JPG)
+![H7](https://user-images.githubusercontent.com/75235813/163431365-d3299eb1-525d-4a5d-9860-3d8e252c07b1.JPG)
+![H8](https://user-images.githubusercontent.com/75235813/163431393-7f7a7411-b5ad-4e32-8b12-5347b7a6b525.JPG)
+![H9](https://user-images.githubusercontent.com/75235813/163431406-3db398cb-81f5-408f-a094-624ac17c41db.JPG)
+
 
 
 ### v) Split and merge HSV Image
-![DIP40](https://user-images.githubusercontent.com/75235813/163427228-5a2b8d4e-7994-4a1f-a7c4-d602921867af.JPG)
-![DIP41](https://user-images.githubusercontent.com/75235813/163427256-8e6e8d4c-3510-46f6-ab3f-9197c642d067.JPG)
-![DIP43](https://user-images.githubusercontent.com/75235813/163427304-3bf514b0-8c75-4ff5-aaed-2eca325b5b3e.JPG)
-![DIP44](https://user-images.githubusercontent.com/75235813/163427345-d9027e39-ed9d-44e2-99dd-844726373809.JPG)
+![H11](https://user-images.githubusercontent.com/75235813/163431461-b57f044c-2a41-4330-bb8e-4a9a95f426da.JPG)
+![H10](https://user-images.githubusercontent.com/75235813/163431481-f7dbdfe5-7a1e-4d5b-83ad-4873289c7375.JPG)
+![H12](https://user-images.githubusercontent.com/75235813/163431507-0ee3c84a-87cc-4017-acc5-2da45c5d0a97.JPG)
+![H13](https://user-images.githubusercontent.com/75235813/163431524-d25b99ba-2916-453f-96ba-d89edd7fc93b.JPG)
+
 
 
 
